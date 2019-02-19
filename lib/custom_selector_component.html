@@ -1,0 +1,7 @@
+<fieldset>
+  <legend>Selector</legend>
+
+  <div *ngFor="let option of options" [class.selected]="isSelected(option.value)" class="item">
+    <span (click)="toggleValue(option.value)">{{option.label}}</span>
+  </div>
+</fieldset>

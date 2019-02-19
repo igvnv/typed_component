@@ -1,0 +1,25 @@
+.item {
+  cursor: pointer;
+}
+
+.item:hover span:before {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.item span:before {
+  border: 1px solid gray;
+  border-radius: 50%;
+  content: '-';
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 5px 5px 0;
+  text-align: center;
+  width: 20px;
+}
+
+.selected span:before {
+  border-color: lightgreen;
+  color: green;
+  content: '+';
+}

@@ -1,0 +1,11 @@
+<h1>Typed component test</h1>
+
+<custom-selector #intSelector [(ngModel)]="selectedNumbers" [options]="numericOptions"></custom-selector>
+
+<p>selectedNumbers: {{selectedNumbers | json}}</p>
+
+<hr />
+
+<custom-selector #strSelector [(ngModel)]="selectedStrings" [options]="stringOptions"></custom-selector>
+
+<p>selectedStrings: {{selectedStrings | json}}</p>
